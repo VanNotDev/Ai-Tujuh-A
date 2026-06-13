@@ -212,7 +212,7 @@ async function askAI(askText) {
         headers['X-Telegram-WebApp'] = 'true';
       }
       
-      const res = await fetch("/api/VannGPT", {
+      const res = await fetch("/VannGPT", {
         method: "POST",
         headers: headers,
         body: JSON.stringify({ text: askText }),
